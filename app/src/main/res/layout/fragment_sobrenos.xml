@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/CorBranco"
+    android:layout_height="match_parent"
+    tools:context=".SobreNosFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/Top_layout_SobreNos"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="#478E40"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ImageViewLogoBranco"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logobranco" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollviewSobreNos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Top_layout_SobreNos"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/Titulo_SobreNos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Sobre Nós"
+                    android:textColor="@color/CorVerde"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/montserrat_bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/id_textoinfoSobreNos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:hyphenationFrequency="normal"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="2dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/CorCastanho"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="O concelho de Penacova, que dista sensivelmente 20 km de Coimbra, integra a Região Centro (NUT II) e a Sub-Região do Baixo Mondego (NUT III). Confronta a norte com os concelhos da Mealhada (distrito de Aveiro), Mortágua e Santa Comba Dão (distrito de Viseu), a nascente com os concelhos de Tábua e Arganil, a sul com o de Vila Nova de Poiares e a poente com o de Coimbra. O Concelho, que possui uma área total de 220 Km2, beneficia de uma acessibilidade privilegiada, já que é rasgado por duas importantes vias rodoviárias: o IP3 e o IC6 que, por si só, proporcionam uma grande facilidade de acesso ao concelho."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Titulo_SobreNos" />
+
+                <TextView
+                    android:id="@+id/id_inSiteCamara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:textSize="9sp"
+                    android:hyphenationFrequency="normal"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/CorCastanho"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="in http://www.cm-penacova.pt/pt/pages/concelho"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_textoinfoSobreNos" />
+
+                <View
+                    android:id="@+id/linha_separador"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="32dp"
+
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="#478E40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_inSiteCamara">
+
+                </View>
+
+
+                <ImageView
+                    android:id="@+id/Imagem_sobreNos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/sobrenos"
+                    android:layout_marginBottom="200dp"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linha_separador" />
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</FrameLayout>

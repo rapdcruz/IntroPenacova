@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Início"
+            android:icon="@drawable/ic_search"
+            android:id="@+id/id_Menu_PaginaInicial"
+            />
+        <item
+            android:title="Eventos Anteriores"
+            android:icon="@drawable/ic_basket"
+            android:id="@+id/id_Menu_EventosAnteriores"
+            />
+        <item
+            android:title="Sobre nós"
+            android:icon="@drawable/ic_favorite"
+            android:id="@+id/id_Menu_SobreNos"
+            />
+        <item
+            android:title="Contactos"
+            android:icon="@drawable/ic_promo_code"
+            android:id="@+id/id_Menu_Contactos"
+            />
+        <item
+            android:title="Faq's"
+            android:icon="@drawable/ic_orders"
+            android:id="@+id/id_Menu_Faqs"
+            />
+    </group>
+    <item android:title=""
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Setting"
+                    android:icon="@drawable/ic_settings"
+                    android:id="@+id/setting"
+                    />
+                <item
+                    android:title="Politica de Privacidade"
+                    android:icon="@drawable/ic_headset"
+                    android:id="@+id/id_PoliticaPrivacidade"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

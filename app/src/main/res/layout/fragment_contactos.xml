@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".ContactosFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/todolayoutSobreNos"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/Top_layout_Contactos"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="#478E40"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ImageViewLogoBranco"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logobranco" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scrollviewregulamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/Top_layout_Contactos"
+            app:layout_constraintVertical_bias="0.0"
+            >
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="300dp"
+                android:background="@color/CorBranco"
+                >
+
+                <TextView
+                    android:id="@+id/TituloContactos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Contactos"
+                    android:textColor="@color/CorVerde"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/nome_CM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"
+                    android:text="Câmara Municipal de Penacova"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TituloContactos" />
+
+                <TextView
+                    android:id="@+id/Text_morada_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Largo Alberto Leitão, 5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nome_CM"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+                <TextView
+                    android:id="@+id/Text_CodigoPostal_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="3360-341 Penacova"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_morada_Contactos"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+                <TextView
+                    android:id="@+id/Text_Email_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="geral[at]cm-penacova.pt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_CodigoPostal_Contactos"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+                <TextView
+                    android:id="@+id/Text_Telefone_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Tel: 239 470 300"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_Email_Contactos"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+                <TextView
+                    android:id="@+id/Text_Fax_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Tel: 239 470 300"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_Telefone_Contactos"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+                <TextView
+                    android:id="@+id/Text_Horario_Contactos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Horário: Dias úteis - 09H00 / 17H00"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_Fax_Contactos"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/CorCastanho"/>
+
+
+                <View
+                    android:id="@+id/linha_separador"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="32dp"
+
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:background="#478E40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Text_Horario_Contactos">
+
+                </View>
+
+                <ImageView
+                    android:id="@+id/id_imagem_mapa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/mapa_penacova"
+                    app:layout_constraintTop_toBottomOf="@+id/linha_separador"
+
+                    />
+
+                <TextView
+                    android:id="@+id/TituloContactenos"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="Contacte-nos"
+                    android:textColor="@color/CorVerde"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_layout_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id_imagem_mapa" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_layout_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TituloContactenos">
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nome Completo"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"
+
+                         />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_layout_Subject"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintTop_toBottomOf="@+id/et_layout_name"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_subject"
+                        android:hint="Assunto"
+                        android:background="@drawable/bg_round"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_layout_Message"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:layout_constraintTop_toBottomOf="@+id/et_layout_Subject"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_weight="1"
+                        android:id="@+id/et_message"
+                        android:hint="Mensagem"
+                        android:gravity="top"
+                        android:background="@drawable/bg_round"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <ImageView
+                    android:id="@+id/bt_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/ic_btn_enviar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_layout_Message"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:scaleType="fitStart"
+                    android:adjustViewBounds="true"
+                    android:layout_marginBottom="200dp"/>
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Penacova Desporto</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_title">Simple Spiner demo</string>
+    <string-array name="spinner_year">
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+
+    </string-array>
+
+
+    <!-- Strings for dashboard -->
+
+    <!-- Categorias -->
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shops">Shops</string>
+    <string name="banks">Banks</string>
+    <string name="airports">Airports</string>
+
+    <!-- Titulos e descrições para a dashboard -->
+
+    <string name="featured_locations">Hotels</string>
+    <string name="featured_locations_description">Hotels</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Search...</string>
+
+</resources>

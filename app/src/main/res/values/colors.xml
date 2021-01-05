@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#478E40</color>
+
+
+
+    <!-- Cores do projeto reais -->
+    <color name="CorCastanho">#401F0D</color>
+    <color name="CorVerde">#478E40</color>
+    <color name="CorLaranja">#C37F45</color>
+    <color name="CorAzulClaro">#A1C5E3</color>
+    <color name="CorBranco">#FAF7EF</color>
+
+</resources>

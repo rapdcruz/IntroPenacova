@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="32dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/Titulo_Politica_Privacidade"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="14sp"
+        android:textColor="@color/CorVerde"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/texto_Politica_Privacidade"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:justificationMode="inter_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Titulo_Politica_Privacidade"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="14sp"
+        android:text="Subtitle"
+        android:hyphenationFrequency="normal"
+        android:textColor="@color/CorCastanho"
+        android:layout_marginBottom="22dp"
+        />
+
+
+
+
+</RelativeLayout>
